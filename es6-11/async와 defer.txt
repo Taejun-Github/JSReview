@@ -1,0 +1,23 @@
+<script asyn src="main.js"></script>
+브라우저가 html을 다운로드 받는 중에 동시에 main.js파일을 다운로드 받는다.
+js파일을 쓸 때, html이 아직 다운되지 않은 경우도 있다.
+
+<script defer src="main.js"></script>
+나머지 html을 끝까지 다운로드 받은 후에 다운로드받은 자바스크립트를 실행한다.
+defer 옵션을 여러개 쓰면?
+
+<script defer src="a.js"></script>
+<script defer src="b.js"></script>
+<script defer src="c.js"></script>
+
+이렇게 여러개를 다운받게 되면 모두 받은 후 순서대로 실행한다.
+defer 옵션을 쓰는 것이 훨씬 효율적이다.
+
+
+
+'use strict'을 반드시 사용해야 한다.
+a = 6; ==> use strict가 없으면 이렇게 변수를 선언하지 않고도 사용 가능하다.
+
+let a;
+a = 6; ==> use strict가 있으면 반드시 이렇게 사용해야 한다.
+
